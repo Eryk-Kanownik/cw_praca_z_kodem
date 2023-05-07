@@ -1,7 +1,7 @@
-name: Workflow
+name: Workflow test
 on: [push]
 jobs:
-  Test:
+  Test-actions:
     runs-on: ubuntu-latest
-      steps:
-        - run: echo "Hello"
+    steps:
+      - run: echo "Hello"
