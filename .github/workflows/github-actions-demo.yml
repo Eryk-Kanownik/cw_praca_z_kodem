@@ -1,8 +1,7 @@
 name: Workflow
 on: [push]
 jobs:
-  Test
+  Test:
     runs-on: ubuntu-latest
       steps:
         - run: echo "Wersja pythona: ${{python -v}}"
-        
