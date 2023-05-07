@@ -3,6 +3,9 @@ on: [push]
 jobs:
   Test-actions:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./cw_praca_z_kodem
     steps:
       - uses: actions/setup-python@v4
       - name: Check python version
@@ -12,5 +15,5 @@ jobs:
         run: |
           pip install pylint
       - name: Run Pylint test
-        run: python -m pylint ../../app.py
+        run: python -m pylint ../app.py
 
