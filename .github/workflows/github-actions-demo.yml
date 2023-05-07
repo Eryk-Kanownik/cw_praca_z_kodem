@@ -10,4 +10,5 @@ jobs:
       - name: Test app.py
       - uses: actions/setup-python@v4
       - run: pip install pylint
+      - name: Hello
       - run: python -m pylint app.py
