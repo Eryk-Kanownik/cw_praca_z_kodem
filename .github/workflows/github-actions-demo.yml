@@ -4,7 +4,7 @@ jobs:
   Test-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Check Python Version
-        uses: actions/setup-python@v4
-        run: python --version
+      - uses: actions/setup-python@v4
+      - name: "Python Verison"
+      - run: python --version
 
