@@ -4,5 +4,5 @@ jobs:
   Test-actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/setup-python@v4
+      - uses: actions/setup-python@v4
       - run: python -version
