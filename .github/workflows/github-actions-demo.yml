@@ -4,4 +4,4 @@ jobs:
   Test-actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello"
+      - run: echo "python -v"
