@@ -7,8 +7,6 @@ jobs:
       - name: Check Python Version
       - uses: actions/setup-python@v4
       - run: python --version
-      - name: Test app.py
       - uses: actions/setup-python@v4
-      - run: pip install pylint
-      - name: Hello
+      - name: Test app.py
       - run: python -m pylint app.py
