@@ -1,7 +1,7 @@
 name: Workflow
-on: [pull]
+on: [push]
 jobs:
-  Test
+  Test:
     runs-on: ubuntu-latest
       steps:
-        - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+        - run: echo "Hello"
