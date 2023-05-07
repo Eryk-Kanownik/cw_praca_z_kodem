@@ -1,5 +1,5 @@
 name: Workflow
-on: [push]
+on: [pull]
 jobs:
   Test
     runs-on: ubuntu-latest
