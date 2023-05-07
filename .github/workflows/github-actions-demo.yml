@@ -4,5 +4,9 @@ jobs:
   Test-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Check Python Version
       - uses: actions/setup-python@v4
       - run: python --version
+      - name: Test app.py
+      - run: pip install pylint
+      - run: python -m pylint app.py
